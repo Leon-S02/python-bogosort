@@ -1,4 +1,4 @@
-import random 
+import random as r
 import time as t
 
 arr = [-4,0,2,16,7,2,8,4,1,3] # Temp array for testing, change values as needed
@@ -17,7 +17,7 @@ def bogosort(arr): # Main sort function, calls eval() after each attempt
 	x = 0
 
 	while not eval(arr):
-		random.shuffle(arr)
+		r.shuffle(arr)
 		x += 1
 
 	t1 = t.time()
